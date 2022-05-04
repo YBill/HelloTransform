@@ -39,7 +39,6 @@ java {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
 }
-
 ```
 
 ##### 2、插件代码如下：
@@ -63,7 +62,6 @@ class MyPlugin implements Plugin<Project> {
 
     }
 }
-
 ```
 
 ##### 3、创建 Transform 类，这里名为 MyTransform
@@ -127,7 +125,6 @@ class MyTransform extends Transform {
     }
 
 }
-
 ```
 
 ##### 注意：编写 Transform 后，重写 transform 打印日志，然后 Make Project 就可以在 Build 里看到输出里，但是输出的 apk 有问题，apk 内没内容里，所以需要通过下面代码拷贝 class ：
