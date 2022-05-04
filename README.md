@@ -2,7 +2,7 @@
 
 #### 什么是 Transform
 
-Transform API 可以让我们在编译打包安卓项目时，在源码编译为 class 字节码后，处理成 dex 文件前，对字节码做一些操作。
+简单来说，Transform API 可以让我们在编译打包安卓项目时，在源码编译为 class 字节码后，处理成 dex 文件前，对字节码做一些操作。
 
 #### 使用 Transform
 
