@@ -1,0 +1,28 @@
+apply plugin: 'java-library'
+
+repositories {
+    google()
+    mavenCentral()
+}
+
+dependencies {
+    // 插件需要的API在这里
+    implementation 'com.android.tools.build:gradle:4.0.0'
+
+}
+
+sourceSets {
+    main {
+        java{
+            srcDir 'src/main/java'
+        }
+        resources {
+            srcDir 'src/main/resources'
+        }
+    }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
